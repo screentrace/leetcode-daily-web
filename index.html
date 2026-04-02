@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeetCode Daily — Master Coding, One Problem at a Time</title>
+  <meta name="description" content="A beautiful mobile app for software enthusiasts to practice LeetCode problems daily, tailored to your skill level and preferred programming language. Available on iOS and Android.">
+  <meta name="keywords" content="LeetCode, coding practice, daily problems, algorithm, data structures, interview prep, programming, DSA, coding app, learn to code">
+  <meta name="author" content="LeetCode Daily">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://leetcodedaily.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leetcodedaily.app/">
+  <meta property="og:title" content="LeetCode Daily — Master Coding, One Problem at a Time">
+  <meta property="og:description" content="Practice LeetCode problems daily, tailored to your skill level and preferred programming language. Build consistent coding habits with personalized daily challenges.">
+  <meta property="og:site_name" content="LeetCode Daily">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LeetCode Daily — Master Coding, One Problem at a Time">
+  <meta name="twitter:description" content="Practice LeetCode problems daily, tailored to your skill level and preferred programming language.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "LeetCode Daily",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "EducationalApplication",
+    "description": "A mobile learning app for software enthusiasts to practice LeetCode problems daily, tailored to skill level and preferred programming language.",
+    "url": "https://leetcodedaily.app",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free tier with 1 daily problem"
+      },
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Pro subscription with unlimited features (monthly and yearly plans available)"
+      }
+    ],
+    "featureList": [
+      "Daily personalized coding problems",
+      "6 programming languages (Java, Python, C++, JavaScript, C#, Go)",
+      "3 skill levels (Beginner, Intermediate, Advanced)",
+      "Streak tracking and progress stats",
+      "Syntax-highlighted solutions",
+      "Offline support",
+      "Push notification reminders"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LeetCode Daily",
+    "url": "https://leetcodedaily.app",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "support@leetcodedaily.app",
+      "contactType": "customer support"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: WebSite (for sitelinks search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "LeetCode Daily",
+    "url": "https://leetcodedaily.app"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="/" class="nav-brand" aria-label="LeetCode Daily home">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+          <path d="M9 16l4 4 10-10" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs><linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#9B6DFF"/><stop offset="1" stop-color="#6366F1"/></linearGradient></defs>
+        </svg>
+        LeetCode Daily
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="document.querySelector('.nav-links').classList.toggle('active'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false')">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#pro">Pro</a></li>
+        <li><a href="#download" class="nav-cta">Download Free</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-badge animate-in">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0l2.5 5 5.5.8-4 3.9.9 5.3L8 12.4 3.1 15l.9-5.3-4-3.9L5.5 5z"/></svg>
+          Free on iOS &amp; Android
+        </div>
+        <h1 class="animate-in">Master Coding,<br><span class="highlight">One Problem at a Time</span></h1>
+        <p class="hero-subtitle animate-in">Build consistent coding habits with personalized daily challenges tailored to your skill level and favorite programming language.</p>
+
+        <div class="store-buttons animate-in" id="download">
+          <a href="https://apps.apple.com/app/id6756704733" class="store-btn" target="_blank" rel="noopener" aria-label="Download on the App Store">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <span class="store-btn-text">
+              <span class="store-btn-label">Download on the</span>
+              App Store
+            </span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.screentrace.leetcodedaily" class="store-btn" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.3 2.3-8.636-8.632z"/></svg>
+            <span class="store-btn-text">
+              <span class="store-btn-label">Get it on</span>
+              Google Play
+            </span>
+          </a>
+        </div>
+
+        <div class="hero-stats animate-in">
+          <div class="hero-stat">
+            <div class="hero-stat-value">6</div>
+            <div class="hero-stat-label">Languages</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">3</div>
+            <div class="hero-stat-label">Skill Levels</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">Daily</div>
+            <div class="hero-stat-label">New Problems</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="features" id="features">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Features</span>
+          <h2>Everything You Need to Level Up</h2>
+          <p>From beginner to advanced, build real problem-solving skills with tools designed for daily practice.</p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature-card animate-in">
+            <div class="feature-icon">📅</div>
+            <h3>Daily Personalized Problems</h3>
+            <p>Get fresh coding challenges every day, curated to match your skill level. No more guessing what to practice next.</p>
+          </article>
+
+          <article class="feature-card animate-in">
+            <div class="feature-icon">🎯</div>
+            <h3>Three Skill Levels</h3>
+            <p>Whether you're a newbie or a seasoned coder, problems adapt to where you are — Beginner, Intermediate, or Advanced.</p>
+          </article>
+
+          <article class="feature-card animate-in">
+            <div class="feature-icon">🔥</div>
+            <h3>Streak &amp; Progress Tracking</h3>
+            <p>Stay motivated with daily streaks, detailed stats, and visual progress tracking to see how far you've come.</p>
+          </article>
+
+          <article class="feature-card animate-in">
+            <div class="feature-icon">💡</div>
+            <h3>Syntax-Highlighted Solutions</h3>
+            <p>Review clean, beautifully formatted solutions with full syntax highlighting in your preferred language.</p>
+          </article>
+
+          <article class="feature-card animate-in">
+            <div class="feature-icon">📴</div>
+            <h3>Offline Support</h3>
+            <p>Downloaded problems are cached locally so you can practice anywhere — on the subway, on a plane, or off the grid.</p>
+          </article>
+
+          <article class="feature-card animate-in">
+            <div class="feature-icon">🔔</div>
+            <h3>Smart Reminders</h3>
+            <p>Never miss a day with push notifications that remind you to complete your daily problems at the right time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Languages ===== -->
+    <section class="languages" id="languages">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Languages</span>
+          <h2>Practice in Your Language</h2>
+          <p>Choose your preferred programming language and get solutions tailored to it.</p>
+        </header>
+
+        <div class="lang-grid">
+          <span class="lang-chip"><span class="lang-dot" style="background:#E76F00"></span>Java</span>
+          <span class="lang-chip"><span class="lang-dot" style="background:#3776AB"></span>Python</span>
+          <span class="lang-chip"><span class="lang-dot" style="background:#00599C"></span>C++</span>
+          <span class="lang-chip"><span class="lang-dot" style="background:#F7DF1E"></span>JavaScript</span>
+          <span class="lang-chip"><span class="lang-dot" style="background:#68217A"></span>C#</span>
+          <span class="lang-chip"><span class="lang-dot" style="background:#00ADD8"></span>Go</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Pro ===== -->
+    <section class="pro-section" id="pro">
+      <div class="container">
+        <div class="pro-card">
+          <div class="pro-badge">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0l2.5 5 5.5.8-4 3.9.9 5.3L8 12.4 3.1 15l.9-5.3-4-3.9L5.5 5z"/></svg>
+            PRO
+          </div>
+          <h2>Unlock Your Full Potential</h2>
+          <p>Go beyond the basics with Pro — more problems, full archives, and an ad-free experience.</p>
+
+          <div class="pro-features">
+            <div class="pro-feature">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Up to 3 daily problems</span>
+            </div>
+            <div class="pro-feature">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Full problem archive</span>
+            </div>
+            <div class="pro-feature">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>All solution approaches</span>
+            </div>
+            <div class="pro-feature">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Bookmark problems</span>
+            </div>
+            <div class="pro-feature">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Completely ad-free</span>
+            </div>
+            <div class="pro-feature">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Monthly &amp; yearly plans</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" id="cta">
+      <div class="container">
+        <div class="cta-card">
+          <h2>Start Solving Today</h2>
+          <p>Join thousands of developers building better coding habits, one problem at a time. It's free.</p>
+          <div class="store-buttons">
+            <a href="https://apps.apple.com/app/id6756704733" class="store-btn" target="_blank" rel="noopener" aria-label="Download on the App Store">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="store-btn-text">
+                <span class="store-btn-label">Download on the</span>
+                App Store
+              </span>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.screentrace.leetcodedaily" class="store-btn" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.3 2.3-8.636-8.632z"/></svg>
+              <span class="store-btn-text">
+                <span class="store-btn-label">Get it on</span>
+                Google Play
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-brand" aria-label="LeetCode Daily home">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="url(#logo-grad2)"/>
+              <path d="M9 16l4 4 10-10" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="logo-grad2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#9B6DFF"/><stop offset="1" stop-color="#6366F1"/></linearGradient></defs>
+            </svg>
+            LeetCode Daily
+          </a>
+          <p>A mobile learning app for software enthusiasts to practice coding problems daily, tailored to skill level and preferred programming language.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pro">Pro Plan</a></li>
+            <li><a href="https://apps.apple.com/app/id6756704733" target="_blank" rel="noopener">App Store</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.screentrace.leetcodedaily" target="_blank" rel="noopener">Google Play</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="mailto:support@leetcodedaily.app">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 LeetCode Daily. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+          <a href="mailto:support@leetcodedaily.app">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+          document.querySelector('.nav-links')?.classList.remove('active');
+        }
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.feature-card').forEach(card => {
+      card.style.animationPlayState = 'paused';
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

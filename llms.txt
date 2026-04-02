@@ -1,0 +1,40 @@
+# LeetCode Daily
+
+> A mobile learning app for software enthusiasts to practice LeetCode problems daily, tailored to skill level and preferred programming language.
+
+## About
+
+LeetCode Daily is an educational mobile app available on iOS and Android that delivers personalized daily coding challenges. It helps developers build consistent problem-solving habits through curated algorithm and data structure problems.
+
+## Key Features
+
+- **Daily Personalized Problems**: Fresh coding challenges every day, matched to your skill level
+- **6 Programming Languages**: Java, Python, C++, JavaScript, C#, Go
+- **3 Skill Levels**: Beginner ("I am a Newbie"), Intermediate ("I know a Few Things"), Advanced ("I'm Pretty Good at This")
+- **Streak & Progress Tracking**: Daily streaks, stats, and visual progress
+- **Syntax-Highlighted Solutions**: Clean, formatted code solutions in your preferred language
+- **Offline Support**: Cached problems available without internet
+- **Push Notification Reminders**: Smart daily reminders
+- **Pro Plan**: Up to 3 daily problems, full archive, all solution approaches, bookmarks, ad-free
+
+## Links
+
+- Website: https://leetcodedaily.app
+- App Store (iOS): https://apps.apple.com/app/id6756704733
+- Google Play (Android): https://play.google.com/store/apps/details?id=com.screentrace.leetcodedaily
+- Privacy Policy: https://leetcodedaily.app/privacy
+- Terms of Service: https://leetcodedaily.app/terms
+- Support: support@leetcodedaily.app
+
+## Technical Details
+
+- Built with Flutter (cross-platform)
+- Backend: Firebase (Auth, Firestore, Cloud Functions, Cloud Messaging)
+- Authentication: Google Sign-In, Apple Sign-In
+- Monetization: In-app subscriptions (monthly/yearly Pro plans)
+
+## Pages
+
+- [Home](https://leetcodedaily.app/) — Landing page with app overview and download links
+- [Privacy Policy](https://leetcodedaily.app/privacy) — How we handle user data
+- [Terms of Service](https://leetcodedaily.app/terms) — Terms for using the app
