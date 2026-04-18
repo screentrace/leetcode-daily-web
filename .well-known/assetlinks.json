@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.screentrace.leetcodedaily",
+      "sha256_cert_fingerprints":
+        ["98:94:8A:DA:73:0B:A2:83:65:77:B2:6D:45:DA:41:1A:6F:DB:B9:E6:05:3D:84:36:80:87:97:8F:E1:0E:09:D7"]
+    }
+  }
+]

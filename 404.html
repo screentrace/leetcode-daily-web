@@ -27,7 +27,7 @@
     </nav>
   </header>
 
-  <main class="page-404">
+  <main class="page-404" id="main-generic-404">
     <div>
       <h1>404</h1>
       <p>This page doesn't exist. Maybe the problem was too hard.</p>
@@ -37,6 +37,28 @@
       </a>
     </div>
   </main>
+
+  <main class="referral-page" id="main-referral" hidden>
+    <div class="container">
+      <div id="referral-root-404"></div>
+    </div>
+  </main>
+
+  <script src="/referral.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (!window.Referral) return;
+      var code = Referral.getCode();
+      if (!code) return;
+      var generic = document.getElementById('main-generic-404');
+      var referral = document.getElementById('main-referral');
+      var root = document.getElementById('referral-root-404');
+      if (!generic || !referral || !root) return;
+      generic.hidden = true;
+      referral.hidden = false;
+      Referral.init(root);
+    });
+  </script>
 
 </body>
 </html>

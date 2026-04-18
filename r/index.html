@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Referral: /r/CODE (404.html reads pathname on GitHub Pages), /r/?code=, /r/#code -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Referral — LeetCode Daily</title>
+  <meta name="description" content="You've been invited to LeetCode Daily. Download the app and use your referral code.">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="/" class="nav-brand" aria-label="LeetCode Daily home">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="url(#logo-grad-r)"/>
+          <path d="M9 16l4 4 10-10" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs><linearGradient id="logo-grad-r" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#9B6DFF"/><stop offset="1" stop-color="#6366F1"/></linearGradient></defs>
+        </svg>
+        LeetCode Daily
+      </a>
+    </nav>
+  </header>
+
+  <main class="referral-page">
+    <div class="container">
+      <div id="referral-root"></div>
+    </div>
+  </main>
+
+  <script src="/referral.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.Referral) Referral.init(document.getElementById('referral-root'));
+    });
+  </script>
+</body>
+</html>
