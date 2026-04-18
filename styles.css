@@ -543,6 +543,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+/* [hidden] must win: our display:flex rules would otherwise keep the 404 block visible */
+.page-404[hidden],
+.referral-page[hidden] {
+  display: none !important;
+}
+
 .page-404 h1 {
   font-size: 6rem;
   background: var(--gradient-primary);
