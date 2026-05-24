@@ -9,6 +9,8 @@ import os
 import re
 import sys
 
+from placement_articles import PLACEMENT_ARTICLES, placement_bodies
+
 BASE = os.path.dirname(os.path.abspath(__file__))
 PUBLISHED = "2026-05-24"
 PUBLISHED_DISPLAY = "May 24, 2026"
@@ -425,6 +427,7 @@ ARTICLES = [
             ),
         ],
     },
+    *PLACEMENT_ARTICLES,
 ]
 
 
@@ -438,7 +441,7 @@ def _inline_figure(slug: str, alt: str) -> str:
 def _bodies() -> dict[str, str]:
     """Article body HTML keyed by slug (~1200–1500 words each)."""
     fig = _inline_figure
-    return {
+    bodies = {
         "why-leetcode-matters": f"""
         <p>If you have spent any time in developer communities, you have heard the debate: Is LeetCode still worth it? Some engineers call it gatekeeping. Others credit it for landing six-figure offers. The truth sits somewhere practical - LeetCode-style practice is not about memorizing obscure tricks. It is about building a repeatable way to break down unfamiliar problems under pressure.</p>
 
@@ -834,6 +837,8 @@ def _bodies() -> dict[str, str]:
         <p>For motivation on why fundamentals still matter, read <a href="/blog/why-leetcode-matters">why LeetCode still matters in 2026</a>.</p>
 """,
     }
+    bodies.update(placement_bodies(fig))
+    return bodies
 
 
 def _body_extras() -> dict[str, str]:
@@ -1497,26 +1502,61 @@ def index_html(articles: list[dict]) -> str:
         </article>"""
         )
     grid = "\n".join(cards)
+    item_list = [
+        {
+            "@type": "ListItem",
+            "position": i + 1,
+            "url": f"{SITE}/blog/{a['slug']}",
+            "name": a["title"],
+        }
+        for i, a in enumerate(articles)
+    ]
+    webpage_ld = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "LeetCode Daily Blog",
+        "description": "Interview prep, campus placement guides for final-year students, DSA tutorials, and LeetCode Daily feature deep-dives.",
+        "url": f"{SITE}/blog/",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "LeetCode Daily",
+            "url": SITE,
+        },
+    }
+    itemlist_ld = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "LeetCode Daily Blog Articles",
+        "itemListElement": item_list,
+    }
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog - LeetCode Daily</title>
-  <meta name="description" content="Interview prep, daily coding habits, DSA guides, and LeetCode Daily feature deep-dives for software engineers.">
+  <meta name="description" content="Interview prep, campus placement guides for final-year students and freshers targeting Google, Amazon, Microsoft, daily coding habits, and DSA tutorials.">
+  <meta name="keywords" content="campus placement, final year placement, fresher software engineer, Google off campus, Amazon placement, Microsoft campus, Big Tech interview, DSA preparation">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="{SITE}/blog/">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="{SITE}/blog/">
   <meta property="og:title" content="Blog - LeetCode Daily">
-  <meta property="og:description" content="Interview prep, daily coding habits, DSA guides, and LeetCode Daily feature deep-dives for software engineers.">
+  <meta property="og:description" content="Interview prep, campus placement guides for final-year students and freshers targeting Big Tech, DSA tutorials, and daily coding habits.">
   <meta property="og:site_name" content="LeetCode Daily">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {json.dumps(webpage_ld, indent=2)}
+  </script>
+  <script type="application/ld+json">
+  {json.dumps(itemlist_ld, indent=2)}
+  </script>
 </head>
 <body>
 
@@ -1526,7 +1566,7 @@ def index_html(articles: list[dict]) -> str:
     <div class="container">
       <header class="blog-index-header">
         <h1>LeetCode Daily Blog</h1>
-        <p>Guides on interview prep, daily coding habits, and getting the most from your practice - written for engineers who want consistent progress, not hype.</p>
+        <p>Guides for final-year students and freshers targeting campus placement at Google, Amazon, Microsoft, and Big Tech - plus daily coding habits, DSA prep, and interview strategies that compound over time.</p>
       </header>
       <div class="blog-grid">
 {grid}

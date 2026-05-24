@@ -38,7 +38,7 @@ LeetCode Daily is an educational mobile app available on iOS and Android that de
 ## Pages
 
 - [Home](https://leetcodedaily.app/) - Landing page with app overview and download links
-- [Blog](https://leetcodedaily.app/blog/) - Interview prep, DSA guides, and feature deep-dives
+- [Blog](https://leetcodedaily.app/blog/) - Interview prep, campus placement guides for freshers, DSA tutorials, and feature deep-dives
 - [Privacy Policy](https://leetcodedaily.app/privacy) - How we handle user data
 - [Terms of Service](https://leetcodedaily.app/terms) - Terms for using the app
 
@@ -58,3 +58,16 @@ LeetCode Daily is an educational mobile app available on iOS and Android that de
 - [Best Programming Language for Coding Interviews](https://leetcodedaily.app/blog/best-language-for-interviews)
 - [How to Review Solutions Without Memorizing Code](https://leetcodedaily.app/blog/review-solutions-without-memorizing)
 - [What FAANG-Style Interviews Actually Test](https://leetcodedaily.app/blog/faang-interview-reality)
+
+## Campus Placement & Fresher Guides
+
+- [Final Year Campus Placement Roadmap 2026: Big Tech Edition](https://leetcodedaily.app/blog/final-year-placement-roadmap-2026)
+- [Campus Placement vs Off-Campus: How to Get Into Big Tech](https://leetcodedaily.app/blog/campus-vs-off-campus-big-tech)
+- [Google Off-Campus Placement 2026: Complete Fresher Guide](https://leetcodedaily.app/blog/google-off-campus-fresher-2026)
+- [Amazon & Microsoft Campus Placement: Fresher Prep Guide](https://leetcodedaily.app/blog/amazon-microsoft-campus-placement)
+- [Software Engineer Resume for Freshers: What Recruiters Actually Read](https://leetcodedaily.app/blog/fresher-resume-software-engineer)
+- [CGPA for Big Tech Placement: Requirements, Cutoffs & Myths](https://leetcodedaily.app/blog/cgpa-big-tech-placement)
+- [How to Crack the Coding Round in Campus Placement Drives](https://leetcodedaily.app/blog/crack-coding-round-campus)
+- [3-Month DSA Plan for Final Year Campus Placement](https://leetcodedaily.app/blog/3-month-dsa-campus-prep)
+- [Internship to Full-Time Offer: Big Tech Conversion Guide](https://leetcodedaily.app/blog/internship-to-full-time-big-tech)
+- [Big Tech Placement from Tier-2 & Tier-3 Colleges: Practical Guide](https://leetcodedaily.app/blog/tier-2-college-big-tech-guide)
