@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — LeetCode Daily</title>
+  <meta name="description" content="Interview prep, daily coding habits, DSA guides, and LeetCode Daily feature deep-dives for software engineers.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://leetcodedaily.app/blog/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leetcodedaily.app/blog/">
+  <meta property="og:title" content="Blog — LeetCode Daily">
+  <meta property="og:description" content="Interview prep, daily coding habits, DSA guides, and LeetCode Daily feature deep-dives for software engineers.">
+  <meta property="og:site_name" content="LeetCode Daily">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "LeetCode Daily Blog",
+    "description": "Interview prep, daily coding habits, DSA guides, and LeetCode Daily feature deep-dives for software engineers.",
+    "url": "https://leetcodedaily.app/blog/",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "LeetCode Daily",
+      "url": "https://leetcodedaily.app"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "LeetCode Daily Blog Articles",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "url": "https://leetcodedaily.app/blog/why-leetcode-matters", "name": "Why LeetCode Still Matters for Software Engineers in 2026"},
+      {"@type": "ListItem", "position": 2, "url": "https://leetcodedaily.app/blog/daily-coding-habit", "name": "How to Build a Daily Coding Habit That Sticks"},
+      {"@type": "ListItem", "position": 3, "url": "https://leetcodedaily.app/blog/90-day-interview-prep", "name": "90-Day Technical Interview Prep Roadmap"},
+      {"@type": "ListItem", "position": 4, "url": "https://leetcodedaily.app/blog/dsa-for-beginners", "name": "Data Structures & Algorithms: A Beginner's Guide"},
+      {"@type": "ListItem", "position": 5, "url": "https://leetcodedaily.app/blog/how-to-read-leetcode-problems", "name": "How to Read a LeetCode Problem Without Getting Stuck"},
+      {"@type": "ListItem", "position": 6, "url": "https://leetcodedaily.app/blog/ai-tutor-explained", "name": "AI Tutor: Get Any LeetCode Problem Explained Step by Step"},
+      {"@type": "ListItem", "position": 7, "url": "https://leetcodedaily.app/blog/skill-levels-guide", "name": "Beginner vs Intermediate vs Advanced: Pick the Right Level"},
+      {"@type": "ListItem", "position": 8, "url": "https://leetcodedaily.app/blog/top-10-interview-patterns", "name": "10 Patterns That Show Up in Almost Every Coding Interview"},
+      {"@type": "ListItem", "position": 9, "url": "https://leetcodedaily.app/blog/streaks-vs-cramming", "name": "Why Streaks Beat Last-Minute Interview Cramming"},
+      {"@type": "ListItem", "position": 10, "url": "https://leetcodedaily.app/blog/leetcode-vs-system-design", "name": "LeetCode vs System Design: What to Study and When"},
+      {"@type": "ListItem", "position": 11, "url": "https://leetcodedaily.app/blog/offline-coding-practice", "name": "How to Practice Coding Offline"},
+      {"@type": "ListItem", "position": 12, "url": "https://leetcodedaily.app/blog/best-language-for-interviews", "name": "Best Programming Language for Coding Interviews"},
+      {"@type": "ListItem", "position": 13, "url": "https://leetcodedaily.app/blog/review-solutions-without-memorizing", "name": "How to Review Solutions Without Memorizing Code"},
+      {"@type": "ListItem", "position": 14, "url": "https://leetcodedaily.app/blog/faang-interview-reality", "name": "What FAANG-Style Interviews Actually Test"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="/" class="nav-brand" aria-label="LeetCode Daily home">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+          <path d="M9 16l4 4 10-10" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs><linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#9B6DFF"/><stop offset="1" stop-color="#6366F1"/></linearGradient></defs>
+        </svg>
+        LeetCode Daily
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="document.querySelector('.nav-links').classList.toggle('active'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false')">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/support">Support</a></li>
+        <li><a href="/#download" class="nav-cta">Download Free</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="blog-index-page">
+    <div class="container">
+      <header class="blog-index-header">
+        <h1>LeetCode Daily Blog</h1>
+        <p>Guides on interview prep, daily coding habits, and getting the most from your practice — written for engineers who want consistent progress, not hype.</p>
+      </header>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <a href="/blog/why-leetcode-matters" class="blog-card-image">
+            <img src="/blog/images/why-leetcode-matters-hero.jpg" alt="Software engineer coding on a laptop" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Career</span>
+            <h2><a href="/blog/why-leetcode-matters">Why LeetCode Still Matters for Software Engineers in 2026</a></h2>
+            <p class="blog-card-excerpt">Despite debates about interview culture, LeetCode-style practice still builds the problem-solving skills employers expect.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/daily-coding-habit" class="blog-card-image">
+            <img src="/blog/images/daily-coding-habit-hero.jpg" alt="Person planning a daily schedule" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Habits</span>
+            <h2><a href="/blog/daily-coding-habit">How to Build a Daily Coding Habit That Sticks</a></h2>
+            <p class="blog-card-excerpt">The engineers who pass interviews aren't always the smartest — they're the most consistent. Here's how to build a daily practice habit.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>7 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/90-day-interview-prep" class="blog-card-image">
+            <img src="/blog/images/90-day-interview-prep-hero.jpg" alt="Roadmap planning on a whiteboard" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Interview Prep</span>
+            <h2><a href="/blog/90-day-interview-prep">90-Day Technical Interview Prep Roadmap</a></h2>
+            <p class="blog-card-excerpt">Three months is enough to transform your interview readiness — if you follow a structured plan instead of random problem grinding.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>10 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/dsa-for-beginners" class="blog-card-image">
+            <img src="/blog/images/dsa-for-beginners-hero.jpg" alt="Beginner learning programming concepts" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Learning</span>
+            <h2><a href="/blog/dsa-for-beginners">Data Structures & Algorithms: A Beginner's Guide</a></h2>
+            <p class="blog-card-excerpt">DSA doesn't have to be intimidating. Start with the core structures interviewers actually test and build from there.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>9 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/how-to-read-leetcode-problems" class="blog-card-image">
+            <img src="/blog/images/how-to-read-leetcode-problems-hero.jpg" alt="Developer reading a coding problem" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Problem Solving</span>
+            <h2><a href="/blog/how-to-read-leetcode-problems">How to Read a LeetCode Problem Without Getting Stuck</a></h2>
+            <p class="blog-card-excerpt">Most stuck moments happen before you write a single line of code. Here's how to decode problem statements systematically.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/ai-tutor-explained" class="blog-card-image">
+            <img src="/blog/images/ai-tutor-explained-hero.jpg" alt="AI assistant helping with coding" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Features</span>
+            <h2><a href="/blog/ai-tutor-explained">AI Tutor: Get Any LeetCode Problem Explained Step by Step</a></h2>
+            <p class="blog-card-excerpt">Stuck on a problem? AI Tutor breaks it down into digestible steps so you learn the reasoning, not just the final code.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>7 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/skill-levels-guide" class="blog-card-image">
+            <img src="/blog/images/skill-levels-guide-hero.jpg" alt="Skill progression levels diagram" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Learning</span>
+            <h2><a href="/blog/skill-levels-guide">Beginner vs Intermediate vs Advanced: Pick the Right Level</a></h2>
+            <p class="blog-card-excerpt">Choosing the wrong difficulty kills motivation. Match problems to your current skill and progress with confidence.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>7 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/top-10-interview-patterns" class="blog-card-image">
+            <img src="/blog/images/top-10-interview-patterns-hero.jpg" alt="Coding patterns on a whiteboard" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Interview Prep</span>
+            <h2><a href="/blog/top-10-interview-patterns">10 Patterns That Show Up in Almost Every Coding Interview</a></h2>
+            <p class="blog-card-excerpt">Interviews feel random until you see the patterns. These ten templates cover the majority of medium-level questions.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>11 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/streaks-vs-cramming" class="blog-card-image">
+            <img src="/blog/images/streaks-vs-cramming-hero.jpg" alt="Streak counter on a phone" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Habits</span>
+            <h2><a href="/blog/streaks-vs-cramming">Why Streaks Beat Last-Minute Interview Cramming</a></h2>
+            <p class="blog-card-excerpt">The week-before-the-interview sprint is a myth. Here's what actually works for retaining problem-solving skills.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>7 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/leetcode-vs-system-design" class="blog-card-image">
+            <img src="/blog/images/leetcode-vs-system-design-hero.jpg" alt="System architecture diagram" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Interview Prep</span>
+            <h2><a href="/blog/leetcode-vs-system-design">LeetCode vs System Design: What to Study and When</a></h2>
+            <p class="blog-card-excerpt">Junior roles lean coding; senior roles lean design. Here's a practical split based on your target level.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/offline-coding-practice" class="blog-card-image">
+            <img src="/blog/images/offline-coding-practice-hero.jpg" alt="Coding on phone during commute" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Features</span>
+            <h2><a href="/blog/offline-coding-practice">How to Practice Coding Offline (Commute, Travel, No Wi-Fi)</a></h2>
+            <p class="blog-card-excerpt">Dead zones and flights don't have to break your streak. Offline mode keeps your daily practice on track.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>6 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/best-language-for-interviews" class="blog-card-image">
+            <img src="/blog/images/best-language-for-interviews-hero.jpg" alt="Programming language logos" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Interview Prep</span>
+            <h2><a href="/blog/best-language-for-interviews">Best Programming Language for Coding Interviews</a></h2>
+            <p class="blog-card-excerpt">The best interview language is the one you can write fluently under pressure — but some choices have clear advantages.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/review-solutions-without-memorizing" class="blog-card-image">
+            <img src="/blog/images/review-solutions-without-memorizing-hero.jpg" alt="Reviewing code on a tablet" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Learning</span>
+            <h2><a href="/blog/review-solutions-without-memorizing">How to Review Solutions Without Memorizing Code</a></h2>
+            <p class="blog-card-excerpt">Memorized solutions fail under interview pressure. Pattern-based review builds transferable skill.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="/blog/faang-interview-reality" class="blog-card-image">
+            <img src="/blog/images/faang-interview-reality-hero.jpg" alt="Tech company office building" width="640" height="360" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Career</span>
+            <h2><a href="/blog/faang-interview-reality">What FAANG-Style Interviews Actually Test (Beyond Hype)</a></h2>
+            <p class="blog-card-excerpt">Big Tech interviews aren't magic. They're structured assessments with predictable components if you know what to expect.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-05-24">May 24, 2026</time>
+              <span>9 min read</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2025 LeetCode Daily. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/">Home</a>
+          <a href="/blog/">Blog</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+          <a href="/support">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -2,8 +2,8 @@
   "schema_version": "v1",
   "name_for_human": "LeetCode Daily",
   "name_for_model": "leetcode_daily",
-  "description_for_human": "A mobile learning app for daily coding practice with personalized problems, streak tracking, and syntax-highlighted solutions.",
-  "description_for_model": "LeetCode Daily is an educational mobile app (iOS & Android) that delivers personalized daily coding challenges in 6 languages (Java, Python, C++, JavaScript, C#, Go) across 3 skill levels. Features include streak tracking, offline support, push reminders, and a Pro subscription for expanded access.",
+  "description_for_human": "A mobile learning app for daily coding practice with personalized problems, AI Tutor explanations, streak tracking, and syntax-highlighted solutions.",
+  "description_for_model": "LeetCode Daily is an educational mobile app (iOS & Android) that delivers personalized daily coding challenges in 6 languages (Java, Python, C++, JavaScript, C#, Go) across 3 skill levels. Features include AI Tutor for step-by-step problem explanations, streak tracking, offline support, push reminders, and a Pro subscription for expanded access. Blog at https://leetcodedaily.app/blog/",
   "auth": {
     "type": "none"
   },

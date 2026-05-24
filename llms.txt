@@ -11,6 +11,7 @@ LeetCode Daily is an educational mobile app available on iOS and Android that de
 - **Daily Personalized Problems**: Fresh coding challenges every day, matched to your skill level
 - **6 Programming Languages**: Java, Python, C++, JavaScript, C#, Go
 - **3 Skill Levels**: Beginner ("I am a Newbie"), Intermediate ("I know a Few Things"), Advanced ("I'm Pretty Good at This")
+- **AI Tutor**: Step-by-step AI explanations for any problem — clarify constraints, explore approaches, and understand solutions
 - **Streak & Progress Tracking**: Daily streaks, stats, and visual progress
 - **Syntax-Highlighted Solutions**: Clean, formatted code solutions in your preferred language
 - **Offline Support**: Cached problems available without internet
@@ -20,6 +21,7 @@ LeetCode Daily is an educational mobile app available on iOS and Android that de
 ## Links
 
 - Website: https://leetcodedaily.app
+- Blog: https://leetcodedaily.app/blog/
 - App Store (iOS): https://apps.apple.com/app/id6756704733
 - Google Play (Android): https://play.google.com/store/apps/details?id=com.screentrace.leetcodedaily
 - Privacy Policy: https://leetcodedaily.app/privacy
@@ -36,5 +38,23 @@ LeetCode Daily is an educational mobile app available on iOS and Android that de
 ## Pages
 
 - [Home](https://leetcodedaily.app/) — Landing page with app overview and download links
+- [Blog](https://leetcodedaily.app/blog/) — Interview prep, DSA guides, and feature deep-dives
 - [Privacy Policy](https://leetcodedaily.app/privacy) — How we handle user data
 - [Terms of Service](https://leetcodedaily.app/terms) — Terms for using the app
+
+## Blog Articles
+
+- [Why LeetCode Still Matters for Software Engineers in 2026](https://leetcodedaily.app/blog/why-leetcode-matters)
+- [How to Build a Daily Coding Habit That Sticks](https://leetcodedaily.app/blog/daily-coding-habit)
+- [90-Day Technical Interview Prep Roadmap](https://leetcodedaily.app/blog/90-day-interview-prep)
+- [Data Structures & Algorithms: A Beginner's Guide](https://leetcodedaily.app/blog/dsa-for-beginners)
+- [How to Read a LeetCode Problem Without Getting Stuck](https://leetcodedaily.app/blog/how-to-read-leetcode-problems)
+- [AI Tutor: Get Any LeetCode Problem Explained Step by Step](https://leetcodedaily.app/blog/ai-tutor-explained)
+- [Beginner vs Intermediate vs Advanced: Pick the Right Level](https://leetcodedaily.app/blog/skill-levels-guide)
+- [10 Patterns That Show Up in Almost Every Coding Interview](https://leetcodedaily.app/blog/top-10-interview-patterns)
+- [Why Streaks Beat Last-Minute Interview Cramming](https://leetcodedaily.app/blog/streaks-vs-cramming)
+- [LeetCode vs System Design: What to Study and When](https://leetcodedaily.app/blog/leetcode-vs-system-design)
+- [How to Practice Coding Offline](https://leetcodedaily.app/blog/offline-coding-practice)
+- [Best Programming Language for Coding Interviews](https://leetcodedaily.app/blog/best-language-for-interviews)
+- [How to Review Solutions Without Memorizing Code](https://leetcodedaily.app/blog/review-solutions-without-memorizing)
+- [What FAANG-Style Interviews Actually Test](https://leetcodedaily.app/blog/faang-interview-reality)
