@@ -11,7 +11,7 @@ LeetCode Daily is an educational mobile app available on iOS and Android that de
 - **Daily Personalized Problems**: Fresh coding challenges every day, matched to your skill level
 - **6 Programming Languages**: Java, Python, C++, JavaScript, C#, Go
 - **3 Skill Levels**: Beginner ("I am a Newbie"), Intermediate ("I know a Few Things"), Advanced ("I'm Pretty Good at This")
-- **AI Tutor**: Step-by-step AI explanations for any problem — clarify constraints, explore approaches, and understand solutions
+- **AI Tutor**: Step-by-step AI explanations for any problem - clarify constraints, explore approaches, and understand solutions
 - **Streak & Progress Tracking**: Daily streaks, stats, and visual progress
 - **Syntax-Highlighted Solutions**: Clean, formatted code solutions in your preferred language
 - **Offline Support**: Cached problems available without internet
@@ -37,10 +37,10 @@ LeetCode Daily is an educational mobile app available on iOS and Android that de
 
 ## Pages
 
-- [Home](https://leetcodedaily.app/) — Landing page with app overview and download links
-- [Blog](https://leetcodedaily.app/blog/) — Interview prep, DSA guides, and feature deep-dives
-- [Privacy Policy](https://leetcodedaily.app/privacy) — How we handle user data
-- [Terms of Service](https://leetcodedaily.app/terms) — Terms for using the app
+- [Home](https://leetcodedaily.app/) - Landing page with app overview and download links
+- [Blog](https://leetcodedaily.app/blog/) - Interview prep, DSA guides, and feature deep-dives
+- [Privacy Policy](https://leetcodedaily.app/privacy) - How we handle user data
+- [Terms of Service](https://leetcodedaily.app/terms) - Terms for using the app
 
 ## Blog Articles
 

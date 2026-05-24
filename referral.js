@@ -101,7 +101,7 @@
     var display = rawCode ? truncateDisplay(rawCode) : '';
     var codeBlock = rawCode
       ? '<div class="referral-code" id="referral-code-value" aria-live="polite">' + escapeHtml(display) + '</div>'
-      : '<div class="referral-code referral-code--placeholder" id="referral-code-value">—</div>';
+      : '<div class="referral-code referral-code--placeholder" id="referral-code-value">-</div>';
 
     var copyBtn = rawCode
       ? '<button type="button" class="referral-copy-btn btn-home" id="referral-copy-btn" aria-label="Copy referral code to clipboard">' +
@@ -130,7 +130,7 @@
     var code = getReferralCode();
     render(container, code);
     if (code) {
-      document.title = "You're invited — LeetCode Daily";
+      document.title = "You're invited - LeetCode Daily";
     }
   }
 
